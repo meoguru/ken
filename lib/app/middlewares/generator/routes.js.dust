@@ -1,0 +1,13 @@
+define(function (require, exports, module) {
+    'use strict';
+
+    module.exports = function () {
+        {#routes}
+            this.{?method}{method.toLowerCase}{:else}match{/method}('{uri}'){?conds}
+                .where({conds|st|s}){/conds}
+                .to('{terminal}'){?opts}
+                .options({opts|st|s}){/opts}{?name}
+                .as('{name}'){/name};
+        {/routes}
+    };
+});
