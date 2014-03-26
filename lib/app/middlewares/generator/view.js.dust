@@ -1,5 +1,0 @@
-define(function (require, exports, module) {
-    var dust = require('dust');
-
-    module.exports = {code|s}
-});

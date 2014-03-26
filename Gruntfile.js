@@ -35,13 +35,13 @@ module.exports = function (grunt) {
                     quiet: true,
                     captureFile: 'coverage.html'
                 },
-                src: [ 'test/**/*.js' ]
+                src: '<%= mochaTest.all.src %>'
             },
             'travisCov': {
                 options: {
                     reporter: 'travis-cov'
                 },
-                src: [ 'test/**/*.js' ]
+                src: '<%= mochaTest.all.src %>'
             }
         }
     });
@@ -51,7 +51,10 @@ module.exports = function (grunt) {
     grunt.registerTask('coverage:before', function () {
         exitProcess = process.exit;
         process.exit = function (code) {
-            code && grunt.warn('Coverage does not be satisfied!');
+            if (code) {
+                process.exit = exitProcess;
+                grunt.warn('Coverage does not be satisfied!');
+            }
         };
     });
 
@@ -59,7 +62,7 @@ module.exports = function (grunt) {
         process.exit = exitProcess;
     });
 
-    grunt.registerTask('test', 'Run JSHint and tests', [
+    grunt.registerTask('test', 'Run tests', [
         'jshint:all',
 
         'mochaTest:all',

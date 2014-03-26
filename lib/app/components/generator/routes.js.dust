@@ -1,12 +1,12 @@
-define(function (require, exports, module) {
+define(function () {
     'use strict';
 
-    module.exports = function () {
+    return function () {
         {#routes}
             this.{?method}{method.toLowerCase}{:else}match{/method}('{uri}'){?conds}
-                .where({conds|st|s}){/conds}
+                .where({conds|l|s}){/conds}
                 .to('{terminal}'){?opts}
-                .options({opts|st|s}){/opts}{?name}
+                .options({opts|l|s}){/opts}{?name}
                 .as('{name}'){/name};
         {/routes}
     };
