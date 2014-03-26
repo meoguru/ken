@@ -4,7 +4,6 @@ var path = require('path'),
     blanket = require('blanket');
 
 module.exports = function (grunt) {
-    /* jshint scripturl: true */
 
     require('load-grunt-tasks')(grunt);
 
