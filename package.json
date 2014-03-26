@@ -32,7 +32,7 @@
     "yari": "^0.0.1",
     "redis": "^0.10.1",
     "hiredis": "^0.1.16",
-    "kasane": "^0.0.1",
+    "kasane": "^0.0.2",
     "static-favicon": "^1.0.2",
     "serve-static": "^1.0.3",
     "less-middleware": "^0.2.1-beta",
