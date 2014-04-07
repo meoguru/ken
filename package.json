@@ -29,9 +29,9 @@
     "shien": "^0.0.8",
     "when": "^3.0.1",
     "winston": "^0.7.3",
-    "yari": "^0.0.4",
+    "yari": "^0.0.5",
     "redis": "^0.10.1",
-    "kasane": "^0.0.2",
+    "kasane": "^0.0.3",
     "static-favicon": "^1.0.2",
     "serve-static": "^1.0.3",
     "less-middleware": "^0.2.1-beta",
@@ -44,12 +44,12 @@
     "dustjs-linkedin": "^2.3.4",
     "dustjs-helpers": "^1.2.0",
     "passport": "^0.2.0",
-    "soketto": "^0.0.2"
+    "soketto": "^0.0.4"
   },
   "devDependencies": {
     "load-grunt-tasks": "^0.4.0",
     "grunt": "^0.4.4",
-    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-jshint": "^0.10.0",
     "mocha": "^1.18.2",
     "chai": "^1.9.1",
     "blanket": "^1.1.6",
