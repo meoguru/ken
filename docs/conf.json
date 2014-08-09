@@ -1,0 +1,20 @@
+{
+  "templates": {
+    "cleverLinks": true,
+    "default": {
+      "outputSourceFiles": true
+    },
+    "applicationName": "Ken.js"
+  },
+  "opts": {
+    "private": true
+  },
+  "plugins": [
+    "plugins/markdown",
+    "docs/test"
+  ],
+  "markdown": {
+    "parser": "gfm",
+    "hardwrap": true
+  }
+}

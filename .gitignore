@@ -5,3 +5,7 @@ Thumbs.db
 # Dependencies and `npm` stuffs
 /node_modules/
 /npm-debug.log
+
+# Documentation distribution files
+/docs/dist
+

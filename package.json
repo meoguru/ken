@@ -33,7 +33,16 @@
     "redis": "^0.10.3",
     "express": "^4.4.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "connect-livereload": "^0.4.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jsdoc": "^0.5.6",
+    "jaguarjs-jsdoc": "git://github.com/davidshimjs/jaguarjs-jsdoc.git#9467116",
+    "load-grunt-tasks": "^0.6.0"
+  },
   "main": "lib/ken.js",
   "bin": "bin/cli.js",
   "preferGlobal": "true",
